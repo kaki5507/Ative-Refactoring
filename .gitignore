@@ -13,6 +13,8 @@ local.properties
 .vscode
 /Servers
 /target/
+/target
+
 /m2e-wtp/
 
 mybatis-config.xml
