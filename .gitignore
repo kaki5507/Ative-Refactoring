@@ -12,13 +12,13 @@ local.properties
 .recommenders
 .vscode
 /Servers
-/target
+/target/
 /m2e-wtp/
 
 mybatis-config.xml
 log4j.xml
 .classpath
-
+.project
 .factorypath
 
 .springBeans
