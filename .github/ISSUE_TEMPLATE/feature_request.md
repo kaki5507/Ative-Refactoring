@@ -18,4 +18,3 @@ assignees: ''
 * * *
 ## Review
 ▶
-▶
