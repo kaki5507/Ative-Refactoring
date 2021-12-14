@@ -38,3 +38,7 @@ root-context.xml
 *.zip
 *.tar.gz
 *.rar
+
+# 깃허브 #
+.github
+.github/
