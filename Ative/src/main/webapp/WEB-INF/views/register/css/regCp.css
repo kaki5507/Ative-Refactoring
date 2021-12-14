@@ -1,0 +1,35 @@
+/*-----------wrap-----------*/
+#wrap {margin: 0 auto; width: 1040px;}
+
+/*------member-complete------*/
+.member-complete{margin: 0 auto; text-align: center;}
+/*------title-complete------*/
+.title-complete{
+    height: 150px; margin: 0 auto; display: inline-block; 
+    text-align: center; margin-top: 75px;
+    animation:thanks ease 3s;
+    animation-delay: 1s; /*로딩되고 1초 뒤에 시작*/
+    opacity: 0;
+    animation-fill-mode: forwards; /*animation-fill-mode 속성은 마지막 모습으로 멈춤*/
+}
+.title-complete > .fa-smile{font-size: 35px; float: left;}
+.title-complete > h2{font-size: 30px; float: left;}
+.title-complete > p{clear: both; white-space: pre-line;}/*마크업에서 줄바꿈 한 것이 적용되면서 width를 넘어간 것이 텍스트에 자동적용*/
+
+/*------shift-go------*/
+.shift-go{margin-left: 70px;}
+/*--main-go--*/
+.main-go{background-color: #222; color: white; border-radius: 2px; position: relative; margin: 50px 0;}
+
+/*--------------------------------------animation--------------------------------------*/
+@keyframes thanks{
+    from{
+        transform: translateY(-50px);/*마이너스는 위에서 시작이다*/
+        color: white;
+    }
+    to{
+        opacity: 1; 
+        transform: translateY(0);
+        color: rgb(45,180,0);
+    }
+}

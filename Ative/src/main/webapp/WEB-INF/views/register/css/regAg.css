@@ -1,0 +1,53 @@
+/*-----------wrap-----------*/
+#wrap {margin: 0 auto; width: 1040px;}
+/*------reglevel-step------*/
+.reglevel > .reglevel-step > .step:nth-child(1){border-bottom: 2px solid #222;}
+/*------member-agree------*/
+.member-agree {width: 100%; height: 800px;}
+.member-agree > p{height: 50px;}
+.member-agree > h2{margin-top: 30px; font-size: 15px;}
+.member-agree > ul > li{line-height: 20px; font-size: 13px;}
+/*--check-title--*/
+.member-agree > .check-title {
+    width: 100%; height: 50px; box-sizing: border-box; padding: 15px 10px 10px 10px; 
+    border-bottom: 1px solid #ddd; position: relative;
+}
+.check-title > a{float: right; width: 30px; height: 30px; cursor: pointer;}
+.check-title > a:nth-child(2n){display: none;} /*짝수번째 위에 화살표 모양*/
+/*--chevron 모양--*/
+.check-title > a > i{font-size: 25px;}
+/*--all-checkbox--*/
+/*css 우선순위 때문에 그냥 .all-checkbox 하면 div에게 밀려남 부모 필요*/
+.member-agree > .all-checkbox{ border-bottom: 1px solid #666;}
+
+/*--check-info--*/
+.check-info{
+    width: 100%; height: 200px; 
+    background-color: #f5f5f5; box-sizing: border-box; padding: 20px;
+    font-size: 15px;
+    overflow-y: auto; /*y축 height만큼 자동 으로 해줌*/
+    word-break: break-all; /*표나 상자의 크기를 유지하면서 '글자'단위로 끊어줌 단어단위로 끊어줄수도 있음*/
+    white-space: pre-line; /*마크업에서 줄바꿈 한 것이 적용되면서 width를 넘어간 것이 텍스트에 자동적용*/
+    display: none;
+}
+.member-agree div:nth-child(7){display: none;}/*class에 두개를 넣으면 그것도 자식이라고 인식함 그래서 7*/
+.member-agree div:nth-child(9){display: none;}
+.member-agree div:nth-child(11){display: none;}
+
+/*table*/
+.check-info > table{
+    margin:30px auto;
+    width: 700px; color: rgb(99, 99, 99); font-size: 11px; 
+    border-collapse: collapse; border-spacing: 0px;/*0이면 딱붙고 5px 이면 각 td 마다 떨어짐*/
+}
+.check-info > table > tbody{margin: 0px; padding: 0; 
+}
+.check-info > table > tbody > tr{margin: 0px; padding: 0px;}
+.check-info > table > tbody > tr > td{
+    margin: 0px; padding: 0px; 
+    border: 1px solid rgb(102, 102, 102); height: 20px; 
+    text-align: center; font-size: 12px; border-collapse: collapse;
+}
+
+/*--약관동의/취소하기--*/
+.shift-go{position: relative; left: 350px; margin-top: 20px;}

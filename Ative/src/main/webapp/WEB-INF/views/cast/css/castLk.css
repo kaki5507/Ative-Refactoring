@@ -1,0 +1,21 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; height: 1900px; margin: 0 auto;}
+*{font-family: 'Montserrat', sans-serif;}
+
+/*------line-nav 빠른 이동------*/
+.line-nav{font-size: 12px; color: #666; width: 800px; height: 40px; margin: 0 auto; padding-top: 20px;}
+.line-nav > a::after{content: ""; height: 10px; display: inline-block; width: 1px; margin: 5px 0 0 20px; background-color: #ccc;}
+/*----dept----*/
+.dept{display: inline-block; width: 100px;}
+.dept > select{border: 0;}
+
+/*------look-list------*/
+.look-list{height: 800px;}
+.look-list > li{background-color: #666; width: 200px; height: 300px; float: left; margin: 20px 30px;}
+.look-connec > img{width: 200px; height: 300px;}
+.look-connec { position: relative;}
+/*----look-info 룩북 설명----*/
+.look-info{position: absolute; background-color: #fff; width: 150px; height: 60px; border-radius: 3px; opacity: 0.8; left: 20px; top: 200px; padding: 5px; font-size: 12px;}
+#brand-name{display: block; text-align: center; color: #666;}
+.brand-title{display: block; color: black; font-weight: 700; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.brand-info{display: block; width: 150px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-top: 10px; font-size: 10px;}

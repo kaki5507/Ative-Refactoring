@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 회원가입 정보입력,Ative Register Input Information">
+    <meta name="keywords" content="에이티브,쇼핑몰,회원가입,ATIVE,Shopping mall,Register">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>에이티브 회원가입(정보입력)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/regii.css">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+        <script type="text/javascript" src="./js/regii.js"></script><!-- regii js-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+    <!----------------wrap---------------->
+    <form id="wrap" action="#" method="get">
+        <!------reglevel------>
+        <div class="reglevel">
+            <h2>JOIN</h2>
+            <p>에이티브의 회원이 되시면 할인쿠폰과 포인트 적립 등의 특별한 혜택을 누리실 수 있습니다.</p>
+            <div class="reglevel-step">
+                <div class="step">
+                    <div class="step-num">1</div><!--border-radius로 동그라미 숫자 만듬-->
+                    <span class="step-info">인증/약관동의</span>
+                </div>
+                <div class="step">></div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <span class="step-info">정보입력</span>
+                </div>
+                <div class="step">></div>                
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <span class="step-info">인증 약관동의</span>
+                </div>
+            </div>
+        </div>
+        <!------//reglevel------>
+        <!------member-join------>
+        <div class="member-join">
+            <h2>개인회원 정보 입력</h2> 
+            <p>
+                <ul>
+                    <!--<b class="must-write">필수입력</b> 로 필수입력 표시-->
+                    <li>(<b class="must-write">필수입력</b>)표시된 항목은 필수 입력사항 입니다.</li>
+                </ul>
+            </p>            
+        </div>
+        <!------//member-join------>
+        <!------member-info------>
+        <div class="member-info">
+            <!--아이디-->
+            <div class="group-id">
+                <label for="userId">아이디<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="text" id="userId" name="userId" maxlength="30">
+                <button type="button" class="overlap" onClick="idRequire();">중복 확인</button>
+            </div>
+            <!--비밀번호-->
+            <div class="group-pwd"><!--pwd=password-->
+                <label for="userPwd">비밀번호<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="password" id="userPwd" name="userPwd" maxlength="30">
+            </div>
+            <!--비밀번호 재확인-->
+            <div class="group-pwd group-pwdR"><!--pwdR=password Replace-->
+                <label for="userPwdR">비밀번호 재확인<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="password" id="userPwdR" name="userPwdR" maxlength="30">
+            </div>
+            <!--이름-->
+            <div class="group-name">
+                <label for="userName">이름<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="text" id="userName" name="userName" maxlength="6">
+            </div>
+            <!--이메일-->
+            <div class="group-email">
+                <label for="userEmail">이메일<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="text" id="userEmail01" name="userEmail01" maxlength="20">
+                <strong>@</strong>
+                <input class="form_control" type="text" id="userEmail02" name="userEmail02" maxlength="20">
+                <select name="select_Email" id="select_Email" onclick="selectEmail();">
+                    <option value="0" selected>선택하세요</option>
+                    <option value="naver.com" selected>naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmir.com">hanmir.com</option>
+                    <option value="1">직접입력</option>
+                </select>
+                <button type="button" class="overlap" onclick="emailRequire();">중복 확인</button>
+                <span>- 정확한 E-mail 정보를 입력하지 않으시면, 주문, 결제, 이벤트, 아이디찾기, 비밀번호 찾기 등에 대한 정확한 정보를 받지 못하실 수 있습니다.</span>
+                <!--수신동의-->
+                <!--name을 같게해야함-->
+                <div class="email-Ag">
+                    <span>    
+                        <input type="radio" id="email-Yes" name="email-Ag" value="수신동의" checked>
+                        <label for="email-Yes">수신을 동의 합니다.</label>                  
+                    </span>
+                    <span>
+                        <input type="radio" id="email-No" name="email-Ag" value="수신동의">
+                        <label for="email-No">수신을 동의 하지 않습니다.</label>     
+                    </span>
+                </div>
+            </div>
+            <!--핸드폰 번호-->
+            <div class="group-tel">
+                <label for="userTel">휴대폰 번호<b class="must-write">필수입력</b></label>
+                <input class="form_control" type="tel" id="userTel" name="userTel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" maxlength="13">
+                <button type="button" class="btn-tel" onclick="verinum();">인증번호 요청</button>
+                <input class="form_control" type="text" id="userCon" name="userCon" placeholder="인증번호를 입력하세요." maxlength="6">
+                <span>- 쇼핑몰에서 제공되는 다양한 이벤트/할인정보/공지사항 등을 sms로 받아보실 수 있습니다<div class=""></div></span>
+                <span>- 결제/교환/환불 등의 주문거래의 관련 이메일 수신동의 여부와 상관없이 발송됩니다.</span>
+
+                <!--수신동의-->
+                <div class="tel-Ag">
+                    <span> 
+                        <input type="radio" id="tel-Yes" name="tel-Ag" value="수신동의" checked>
+                        <label for="tel-Yes">수신을 동의 합니다.</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="tel-No" name="tel-Ag" value="수신동의">
+                        <label for="tel-No">수신을 동의 하지 않습니다.</label>     
+                    </span>
+                </div>                
+            </div>
+            <!--생년월일-->
+            <div class="group-birth">
+                <label for="userBirth">생년월일<b class="must-write">필수입력</b></label>
+                <select name="birthYY" id="birthYY" title="년도"></select>
+                <select name="birthMM" id="birthMM" title="월"></select>
+                <select name="birthDD" id="birthDD" title="일"></select>
+            </div>
+            <!--성별-->
+            <div class="group-gender">
+                <div class="userGender">성별<b class="must-write">필수입력</b></div>
+                <span> 
+                    <input type="radio" id="men" name="gender" value="성별" checked>
+                    <label for="men">남성</label>
+                </span>
+                <span>
+                    <input type="radio" id="women" name="gender" value="성별">
+                    <label for="women">여성</label> 
+                </span>
+            </div>
+        </div>
+        <!------//member-info------>
+        <!------shift-go------>
+        <h3 class="shift-go">
+            <a href="" class="main-go">취소하기</a>
+            <button type="button" class="ative-join" id="btn_join" onClick="joinclear();" value="작성완료">회원가입</button>
+        </h3>
+        <!------//shift-go------>
+    </form>
+    <!----------------//wrap---------------->
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

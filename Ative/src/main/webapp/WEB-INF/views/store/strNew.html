@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 스토어(New),Ative Store New">
+    <meta name="keywords" content="에이티브,쇼핑몰,스토어,ATIVE,Shopping mall,New">
+    <meta name="copyright" content="copyright 2020 html25th">
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/store.css"><!--store 공통-->
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lexend+Tera&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+    <!----------------wrap---------------->
+    <div id="wrap">
+        <!------line-nav------>
+        <nav class="line-nav">
+            <a href="../main/main.html">HOME</a>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="" selected>NEW</option><!--php 로 연결해야함-->
+                    <option value="">MEN</option>
+                    <option value="">SHOES</option>
+                    <option value="">BAG & ACC</option>
+                    <option value="">WOMEN</option>
+                </select>
+            </div>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="" selected>반팔티</option><!--php 로 연결해야함 일단 men 부분만-->
+                    <option value="">긴팔티</option>
+                    <option value="">후드</option>
+                    <option value="">바지</option>
+                </select>
+            </div>
+        </nav>
+        <!------//line-nav------>
+        <!------snb------>
+        <div id="snb">
+            <a class="snb-New" href="./strNew.html">NEW</a>
+            <a class="snb-Men" href="./strMen.html">MEN</a>
+            <!--Men-sub-->
+            <a class="Men-sub sub-page" href="">반팔티</a>
+            <a class="Men-sub sub-page" href="">긴팔티</a>
+            <a class="Men-sub sub-page" href="">후드</a>
+            <a class="Men-sub sub-page" href="">바지</a>
+            <!--//Men-sub-->
+            <a class="snb-Sho" href="./strSho.html">SHOES</a>
+            <!--Sho-sub-->
+            <a class="Sho-sub sub-page" href="">스니커즈</a>
+            <a class="Sho-sub sub-page" href="">캔버스/단화</a>
+            <a class="Sho-sub sub-page" href="">러닝화/피트니스화</a>
+            <a class="Sho-sub sub-page" href="">구두</a>
+            <!--//Sho-sub-->
+            <a class="snb-BA" href="./strBA.html">BAG & ACC</a>
+            <!--BA-sub-->
+            <a class="BA-sub sub-page" href="">백팩</a>
+            <a class="BA-sub sub-page" href="">메신저/크로스백</a>
+            <a class="BA-sub sub-page" href="">에코백</a>
+            <a class="BA-sub sub-page" href="">팔찌</a>
+            <a class="BA-sub sub-page" href="">반지</a>
+            <a class="BA-sub sub-page" href="">목걸이</a>
+            <!--//BA-sub-->
+            <a class="snb-Wm" href="./strWm.html">WOMEN</a>
+            <!--Wm-sub-->
+            <a class="Wm-sub sub-page" href="">반팔티</a>
+            <a class="Wm-sub sub-page" href="">긴팔티</a>
+            <a class="Wm-sub sub-page" href="">후드</a>
+            <a class="Wm-sub sub-page" href="">바지</a>
+            <a class="Wm-sub sub-page" href="">원피스</a>
+            <a class="Wm-sub sub-page" href="">스커트</a>
+            <!--//Wm-sub-->
+        </div>
+        <!------//snb------>
+        <!------center-wrap------>
+        <div id="center-wrap">
+            <!----goods-wrap---->
+            <ul class="goods-wrap">
+                <!--goods-list (1)-->
+                <li class="goods-list">
+                    <a href="http://127.0.0.1:5500/goods/goods.html">
+                        <img src="./images/clothes/옷 (1).jpg" alt="옷 1">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블랙 오버사이즈 잉카 암 테이핑 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>40,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (2)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (2).jpg" alt="옷 2">
+                        <span class="bname">바베우</span>
+                        <span class="pname">버건디 오버사이즈 잉카 암 테이핑 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>40,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (3)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (3).jpg" alt="옷 3">
+                        <span class="bname">바베우</span>
+                        <span class="pname">카키 오버사이즈 잉카 암 테이핑 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>40,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (4)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (4).jpg" alt="옷 4">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블랙 오버사이즈 투톤 체스트 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>          
+                <!--goods-list (5)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (5).jpg" alt="옷 5">
+                        <span class="bname">바베우</span>
+                        <span class="pname">네이비 오버사이즈 투톤 체스트 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (6)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (6).jpg" alt="옷 6">
+                        <span class="bname">바베우</span>
+                        <span class="pname">그린 오버사이즈 팜리프 프린팅 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>42,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (7)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (7).jpg" alt="옷 7">
+                        <span class="bname">바베우</span>
+                        <span class="pname">그레이 오버사이즈 팜리프 프린팅 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>42,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>     
+                <!--goods-list (8)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (8).jpg" alt="옷 8">
+                        <span class="bname">바베우</span>
+                        <span class="pname">베이지 오버사이즈 팜리프 프린팅 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>42,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (9)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (9).jpg" alt="옷 9">
+                        <span class="bname">바베우</span>
+                        <span class="pname">아이보리 오버사이즈 암 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (10)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (10).jpg" alt="옷 10">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블랙 오버사이즈 암 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (11)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (11).jpg" alt="옷 11">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블루 오버사이즈 암 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (12)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (12).jpg" alt="옷 12">
+                        <span class="bname">바베우</span>
+                        <span class="pname">그레이 오버사이즈 암 링 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>38,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (13)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (13).jpg" alt="옷 13">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블랙 선 그립 카고 쇼츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (14)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (14).jpg" alt="옷 14">
+                        <span class="bname">바베우</span>
+                        <span class="pname">민트 선 그립 카고 쇼츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (15)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (15).jpg" alt="옷 15">
+                        <span class="bname">바베우</span>
+                        <span class="pname">그레이 선 그립 카고 쇼츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (16)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (16).jpg" alt="옷 16">
+                        <span class="bname">바베우</span>
+                        <span class="pname">스카이 선 그립 카고 쇼츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (17)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (17).jpg" alt="옷 17">
+                        <span class="bname">바베우</span>
+                        <span class="pname">블랙 포인트라인 쇼츠</span>
+                        <span class="price">
+                            <b>41,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (18)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (18).jpg" alt="옷 18">
+                        <span class="bname">바베우</span>
+                        <span class="pname">네이비 포인트라인 쇼츠</span>
+                        <span class="price">
+                            <b>41,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (19)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (19).jpg" alt="옷 19">
+                        <span class="bname">바베우</span>
+                        <span class="pname">그레이 포인트라인 쇼츠</span>
+                        <span class="price">
+                            <b>41,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (20)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (20).jpg" alt="옷 20">
+                        <span class="bname">바베우</span>
+                        <span class="pname">밀리터리 견장 반팔 셔츠</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (21)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (21).jpg" alt="옷 21">
+                        <span class="bname">바베우</span>
+                        <span class="pname">턱시도 넥 린넨 더블 반팔 셔츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (22)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (22).jpg" alt="옷 22">
+                        <span class="bname">바베우</span>
+                        <span class="pname">비대칭 저지 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>43,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (23)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (23).jpg" alt="옷 23">
+                        <span class="bname">바베우</span>
+                        <span class="pname">네이비 실버라인 숄더 버튼 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (24)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (24).jpg" alt="옷 24">
+                        <span class="bname">바베우</span>
+                        <span class="pname">화이트 골드라인 숄더 버튼 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (25)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/clothes/옷 (25).jpg" alt="옷 25">
+                        <span class="bname">바베우</span>
+                        <span class="pname">사이드라인 배색 반팔 티셔츠</span>
+                        <span class="price">
+                            <b>28,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!----//goods-wrap---->   
+            <!----paging---->
+            <div class="paging"></div>
+            <!----//paging---->
+        </div>
+        <!------//center-wrap------>
+    </div>
+    <!----------------//wrap---------------->
+
+
+
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

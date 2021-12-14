@@ -1,0 +1,11 @@
+/*-----------wrap-----------*/
+#wrap {width: 1040px; margin: 0 auto;}
+/*------company-img------*/
+#company-img > img{width: 1040px;}
+/*------h2------*/
+h2{margin: 20px 0; font-size: 20px;}
+/*------company-info------*/
+#company-info{width: 800px; margin: 50px auto;}
+#compnay-info > th,td{padding: 15px;}
+#company-info > tbody > tr > th{text-align: center; background-color: #f9f9f9; width: 40%;}
+#company-info > tbody > tr > td{text-align: left; background-color: #fff; color: #777;}

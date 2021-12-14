@@ -1,0 +1,54 @@
+/*-----------wrap-----------*/
+#wrap {margin: 0 auto; width: 600px;}
+
+/*------title-ipdFii------*/
+.title-ipdFii{text-align: center; margin: 30px 0 20px 0;}
+
+/*------ipdForm------*/
+#ipdForm{width: 100%; height: 400px; background-color: #f3f3f3;}
+/*----title-ipd----*/
+.title-ipd{background-color: grey;}
+.title-ipd > a{
+    display: block; float: left; text-align: center; 
+    width: 300px; box-sizing: border-box; border-top: 2px solid #222;
+}
+.title-ipd > a:first-child{
+    border-top: 1px solid #666;
+    color: #666;
+}
+
+/*----ipd-search----*/
+.ipd-search{
+    clear: left; /*float 물려있는거 풀음*/
+    height: 80px;
+    display: block;
+    word-break: break-all; /*표나 상자의 크기를 유지하면서 '글자'단위로 끊어줌 단어단위로 끊어줄수도 있음*/
+    white-space: pre-line; /*마크업에서 줄바꿈 한 것이 적용되면서 width를 넘어간 것이 텍스트에 자동적용*/
+    text-align: center; font-size: 12px; color: #666; line-height: 25px;
+}
+.ipd-search > span{color: #c38447;}
+
+/*----ipd-userinput----*/
+.ipd-userinput{width: 100%; height: 120px; box-sizing: border-box; padding: 20px;}
+.ipd-userinput > label{width: 100px; display: block; float: left;}
+#userCon{margin-left: 25px;}
+
+/*--form_control*/
+.form_control{width: 400px; height: 30px; box-sizing: border-box; border: 1px solid rgb(192, 192, 192); margin: 5px 30px; padding: 0 10px;}
+
+/*--btn-tel--*/
+.btn-tel{
+    clear: both; width: 100px; height: 40px; 
+    background-color: #666; color: #fff; margin-left: 20px; 
+    border-radius: 3px; border: 1px solid #f3f3f3;
+}
+
+/*----pwd-find----*/
+.pwd-find{width: 120px; margin: 20px auto;}
+#pwd-clear{width: 120px; height: 50px; background-color: #222; color: #fff; margin-left: 20px; border-radius: 3px;}
+
+/*----ipd-help----*/
+.ipd-help{width: 100%; box-sizing: border-box; padding: 20px; margin-bottom: 50px; margin-top: 10px; background-color: #f3f3f3;}
+.ipd-help > h4{font-size: 15px; line-height: 30px;}
+.ipd-help > .guide{font-size: 12px; padding: 10px;}
+.ipd-help > .guide > span{cursor: pointer; color: #ff0000;}

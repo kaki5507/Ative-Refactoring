@@ -1,0 +1,12 @@
+/*-----------wrap-----------*/
+#wrap {width: 100%; margin: 0 auto;}
+/*------dd------*/
+#info{margin: 0 auto; text-align: left; font-size: 20px;}
+#info > table{width: 100%; border-collapse: collapse;}
+#info > table > #title{width: 500px; height: 200px; text-align: center; position: relative;}
+table > tr > td{padding: 5px 10px;}
+.notice{background-color: #f3f3f3; text-align: center; padding:5px 10px;}
+.space{text-align: left; padding:5px 10px;}
+
+p{text-overflow: ellipsis; word-break: break-all; line-break: normal; padding: 0 10px; font-size: 15px; margin: 30px 0;}
+a{text-decoration: initial; outline: initial; color: blue;}

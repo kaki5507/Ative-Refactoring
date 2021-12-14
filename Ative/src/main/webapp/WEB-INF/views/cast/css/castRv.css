@@ -1,0 +1,40 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; height: 2100px; margin: 0 auto;}
+a:hover{text-decoration: none; color: black;}
+
+/*------reserve-Event------*/
+.reserve-Event{width: 1040px; margin: 0 auto;}
+
+/*------rv-type------*/
+.rv-type{text-align: center; margin-top: 20px;}
+.rv-type > a{width: 80px; height: 80px; border-radius: 5px; font-size: 30px; padding: 0 20px; font-weight: lighter; text-align: center;}
+
+/*------rv-list------*/
+.rv-list{margin-top: 30px; margin: 0 auto;}
+.rv-list > li{background-color: #f3f3f3; width: 300px; border: 1px solid #e6e6e8; box-sizing: border-box; padding: 20px; float: left; margin: 30px 0px 0 40px; position: relative;}
+/*----리뷰 큰 이미지----*/
+.reviewImg{width:260px; height: 200px;}
+.review-page > .review{display: inline-block; width: 260px; height: 30px; margin: 10px 0; font-weight: bold; font-size: 10px; white-space: pre-wrap; overflow: hidden; text-overflow: ellipsis;}
+.review-page > p{position: relative; border-bottom: 1px solid #e6e6e8;}
+.review-page > p > b{float: right;}
+
+/*--브랜드 설명--*/
+.mini-info{width: 50px; box-sizing: border-box;}
+.mini-info > span{font-size: 12px; margin-left: 8px;}
+.brandImg{width: 70px; float: left; padding-bottom: 30px;}
+.pname{color: #666; position: relative; top: 10px;}
+.sname{color: #111; position: relative; top: 15px;}
+
+/*----searchForm 검색 입력창----*/
+.review-search { border: 0; text-align: center;}
+.review-search > legend {display: none; position: absolute;}
+#searchForm{position: relative; margin: 30px 240px 50px;}/*겹치게 만들어야함*/
+#searchForm input#search{
+    width: 550px; height: 50px;
+    border: 1px solid #222; border-radius: 5px;
+    font-size: 10px; padding: 0 20px; float: left;
+}
+#searchForm > button{position: absolute; top: 10px; right: 20px; border: 0; background-color: #fff;}
+#searchForm > button > .fa-search{font-size: 30px;}
+
+.btn_top{clear: left;}

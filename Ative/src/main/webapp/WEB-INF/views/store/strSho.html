@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 스토어(SHOES),Ative Store Shoes">
+    <meta name="keywords" content="에이티브,쇼핑몰,스토어,ATIVE,Shopping mall,Shoes">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>스토어(SHOES)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/store.css"><!--store 공통-->
+        <link rel="stylesheet" href="./css/strSho.css"><!--strSho-->
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lexend+Tera&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+    <!----------------wrap---------------->
+    <div id="wrap">
+        <!------line-nav------>
+        <nav class="line-nav">
+            <a href="../main/main.html">HOME</a>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="">NEW</option><!--php 로 연결해야함-->
+                    <option value="">MEN</option>
+                    <option value="" selected>SHOES</option>
+                    <option value="">BAG & ACC</option>
+                    <option value="">WOMEN</option>
+                </select>
+            </div>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="" selected>스니커즈</option>
+                    <option value="">캔버스/단화</option>
+                    <option value="">러닝화/피트니스화</option>
+                    <option value="">구두</option>
+                </select>
+            </div>
+        </nav>
+        <!------//line-nav------>
+        <!------snb------>
+        <div id="snb">
+            <a class="snb-New" href="./strNew.html">NEW</a>
+            <a class="snb-Men" href="./strMen.html">MEN</a>
+            <!--Men-sub-->
+            <a class="Men-sub sub-page" href="">반팔티</a>
+            <a class="Men-sub sub-page" href="">긴팔티</a>
+            <a class="Men-sub sub-page" href="">후드</a>
+            <a class="Men-sub sub-page" href="">바지</a>
+            <!--//Men-sub-->
+            <a class="snb-Sho" href="./strSho.html">SHOES</a>
+            <!--Sho-sub-->
+            <a class="Sho-sub sub-page" href="">스니커즈</a>
+            <a class="Sho-sub sub-page" href="">캔버스/단화</a>
+            <a class="Sho-sub sub-page" href="">러닝화/피트니스화</a>
+            <a class="Sho-sub sub-page" href="">구두</a>
+            <!--//Sho-sub-->
+            <a class="snb-BA" href="./strBA.html">BAG & ACC</a>
+            <!--BA-sub-->
+            <a class="BA-sub sub-page" href="">백팩</a>
+            <a class="BA-sub sub-page" href="">메신저/크로스백</a>
+            <a class="BA-sub sub-page" href="">에코백</a>
+            <a class="BA-sub sub-page" href="">팔찌</a>
+            <a class="BA-sub sub-page" href="">반지</a>
+            <a class="BA-sub sub-page" href="">목걸이</a>
+            <!--//BA-sub-->
+            <a class="snb-Wm" href="./strWm.html">WOMEN</a>
+            <!--Wm-sub-->
+            <a class="Wm-sub sub-page" href="">반팔티</a>
+            <a class="Wm-sub sub-page" href="">긴팔티</a>
+            <a class="Wm-sub sub-page" href="">후드</a>
+            <a class="Wm-sub sub-page" href="">바지</a>
+            <a class="Wm-sub sub-page" href="">원피스</a>
+            <a class="Wm-sub sub-page" href="">스커트</a>
+            <!--//Wm-sub-->
+        </div>
+        <!------//snb------>
+        <!------center-wrap------>
+        <div id="center-wrap">
+            <!----goods-wrap---->
+            <ul class="goods-wrap">
+                <!--goods-list (1)-->
+                <li class="goods-list">
+                    <a href="http://127.0.0.1:5500/goods/goods.html">
+                        <img src="./images/shoes/신발 (1).jpg" alt="신발 1">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 버블 스트랩 샌들 네이비</span>
+                        <span class="price">
+                            <b>39,900</b>
+                            <span>원</span>
+                            <div class="strike-price">
+                                <em>59,000</em><span>원</span><span class="strike">32%</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (2)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (2).jpg" alt="신발 2">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 버블 스트랩 샌들 트리플 블랙</span>
+                        <span class="price">
+                            <b>39,900</b>
+                            <span>원</span>
+                            <div class="strike-price">
+                                <em>59,000</em><span>원</span><span class="strike">32%</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (3)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (3).jpg" alt="신발 3">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 아테네 그레이</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (4)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (4).jpg" alt="신발 4">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 아테네 블랙</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>          
+                <!--goods-list (5)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (5).jpg" alt="신발 5">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 아테네 트리플 블랙</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (6)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (6).jpg" alt="신발 6">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 아테네 핑크</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (7)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (7).jpg" alt="신발 7">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 하이커 그린 레몬</span>
+                        <span class="price">
+                            <b>69,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>     
+                <!--goods-list (8)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (8).jpg" alt="신발 8">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 하이커 아이보리</span>
+                        <span class="price">
+                            <b>69,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (9)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (9).jpg" alt="신발 9">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 하이커 아이보리 골드</span>
+                        <span class="price">
+                            <b>69,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (10)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (10).jpg" alt="신발 10">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 하이커 화이트</span>
+                        <span class="price">
+                            <b>69,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (11)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (11).jpg" alt="신발 11">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 볼트 그레이 옐로우</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (12)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (12).jpg" alt="신발 12">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 볼트 블랙 라임</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (13)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (13).jpg" alt="신발 13">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 볼트 오렌지 블랙</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (14)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (14).jpg" alt="신발 14">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 볼트 화이트 그레이</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (15)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (15).jpg" alt="신발 15">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 크루즈 블랙</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (16)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (16).jpg" alt="신발 16">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 크루즈 트리플 블랙</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (17)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (17).jpg" alt="신발 17">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 크루즈 화이트</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (18)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (18).jpg" alt="신발 18">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 보고타 블랙</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (19)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (19).jpg" alt="신발 19">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 보고타 그레이</span>
+                        <span class="price">
+                            <b>49,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (20)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (20).jpg" alt="신발 20">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 그레이</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (21)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (21).jpg" alt="신발 21">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 네이비</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (22)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (22).jpg" alt="신발 22">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 블랙</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (23)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (23).jpg" alt="신발 23">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 트리플 블랙</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (24)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (24).jpg" alt="신발 24">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 화이트</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (25)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/shoes/신발 (25).jpg" alt="신발 25">
+                        <span class="bname">아키클래식</span>
+                        <span class="pname">아키클래식 베가스 샌들 화이트 레드</span>
+                        <span class="price">
+                            <b>59,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!----//goods-wrap---->   
+            <!----paging---->
+            <div class="paging"></div>
+            <!----//paging---->
+        </div>
+        <!------//center-wrap------>
+    </div>
+    <!----------------//wrap---------------->
+
+
+
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

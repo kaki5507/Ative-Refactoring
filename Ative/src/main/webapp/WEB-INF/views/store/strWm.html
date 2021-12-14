@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 스토어(WOMEN),Ative Store Women">
+    <meta name="keywords" content="에이티브,쇼핑몰,스토어,ATIVE,Shopping mall,Women">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>스토어(WOMEN)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/store.css"><!--store 공통-->
+        <link rel="stylesheet" href="./css/strWm.css"><!--strBA-->
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lexend+Tera&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+    <!----------------wrap---------------->
+    <div id="wrap">
+        <!------line-nav------>
+        <nav class="line-nav">
+            <a href="../main/main.html">HOME</a>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="">NEW</option><!--php 로 연결해야함-->
+                    <option value="">MEN</option>
+                    <option value="">SHOES</option>
+                    <option value="">BAG & ACC</option>
+                    <option value="" selected>WOMEN</option>
+                </select>
+            </div>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="" selected>반팔티</option>
+                    <option value="">긴팔티</option>
+                    <option value="">후드</option>
+                    <option value="">바지</option>
+                    <option value="">원피스</option>
+                    <option value="">스커트</option>
+                </select>
+            </div>
+        </nav>
+        <!------//line-nav------>
+        <!------snb------>
+        <div id="snb">
+            <a class="snb-New" href="./strNew.html">NEW</a>
+            <a class="snb-Men" href="./strMen.html">MEN</a>
+            <!--Men-sub-->
+            <a class="Men-sub sub-page" href="">반팔티</a>
+            <a class="Men-sub sub-page" href="">긴팔티</a>
+            <a class="Men-sub sub-page" href="">후드</a>
+            <a class="Men-sub sub-page" href="">바지</a>
+            <!--//Men-sub-->
+            <a class="snb-Sho" href="./strSho.html">SHOES</a>
+            <!--Sho-sub-->
+            <a class="Sho-sub sub-page" href="">스니커즈</a>
+            <a class="Sho-sub sub-page" href="">캔버스/단화</a>
+            <a class="Sho-sub sub-page" href="">러닝화/피트니스화</a>
+            <a class="Sho-sub sub-page" href="">구두</a>
+            <!--//Sho-sub-->
+            <a class="snb-BA" href="./strBA.html">BAG & ACC</a>
+            <!--BA-sub-->
+            <a class="BA-sub sub-page" href="">백팩</a>
+            <a class="BA-sub sub-page" href="">메신저/크로스백</a>
+            <a class="BA-sub sub-page" href="">에코백</a>
+            <a class="BA-sub sub-page" href="">팔찌</a>
+            <a class="BA-sub sub-page" href="">반지</a>
+            <a class="BA-sub sub-page" href="">목걸이</a>
+            <!--//BA-sub-->
+            <a class="snb-Wm" href="./strWm.html">WOMEN</a>
+            <!--Wm-sub-->
+            <a class="Wm-sub sub-page" href="">반팔티</a>
+            <a class="Wm-sub sub-page" href="">긴팔티</a>
+            <a class="Wm-sub sub-page" href="">후드</a>
+            <a class="Wm-sub sub-page" href="">바지</a>
+            <a class="Wm-sub sub-page" href="">원피스</a>
+            <a class="Wm-sub sub-page" href="">스커트</a>
+            <!--//Wm-sub-->
+        </div>
+        <!------//snb------>
+        <!------center-wrap------>
+        <div id="center-wrap">
+            <!----goods-wrap---->
+            <ul class="goods-wrap">
+                <!--goods-list (1)-->
+                <li class="goods-list">
+                    <a href="http://127.0.0.1:5500/goods/goods.html">
+                        <img src="./images/women/여자옷 (1).jpg" alt="여자옷 1">
+                        <span class="bname">비주안</span>
+                        <span class="pname">썸머 심플 자켓</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (2)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (2).jpg" alt="여자옷 2">
+                        <span class="bname">비주안</span>
+                        <span class="pname">오버핏 셔츠</span>
+                        <span class="price">
+                            <b>35,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (3)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (3).jpg" alt="여자옷 3">
+                        <span class="bname">비주안</span>
+                        <span class="pname">SBP 티셔츠</span>
+                        <span class="price">
+                            <b>19,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (4)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (4).jpg" alt="여자옷 4">
+                        <span class="bname">비주안</span>
+                        <span class="pname">밑단 언발 티셔츠</span>
+                        <span class="price">
+                            <b>19,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>          
+                <!--goods-list (5)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (5).jpg" alt="여자옷 5">
+                        <span class="bname">비주안</span>
+                        <span class="pname">SS베이직 슬랙스</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (6)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (6).jpg" alt="여자옷 6">
+                        <span class="bname">비주안</span>
+                        <span class="pname">셔링 디테일 원피스</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (7)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (7).jpg" alt="여자옷 7">
+                        <span class="bname">비주안</span>
+                        <span class="pname">넥 프릴 원피스</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>     
+                <!--goods-list (8)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (8).jpg" alt="여자옷 8">
+                        <span class="bname">비주안</span>
+                        <span class="pname">원 포켓 원피스</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (9)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (9).jpg" alt="여자옷 9">
+                        <span class="bname">비주안</span>
+                        <span class="pname">밑단 배색 주름 원피스</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (10)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (10).jpg" alt="여자옷 10">
+                        <span class="bname">비주안</span>
+                        <span class="pname">패턴 린넨 와이드 팬츠</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (11)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (11).jpg" alt="여자옷 11">
+                        <span class="bname">비주안</span>
+                        <span class="pname">스판진 부츠컷 팬츠</span>
+                        <span class="price">
+                            <b>25,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (12)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (12).jpg" alt="여자옷 12">
+                        <span class="bname">비주안</span>
+                        <span class="pname">배색포인트원피스</span>
+                        <span class="price">
+                            <b>39,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (13)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (13).jpg" alt="여자옷 13">
+                        <span class="bname">비주안</span>
+                        <span class="pname">민소매 점프슈트</span>
+                        <span class="price">
+                            <b>35,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (14)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (14).jpg" alt="여자옷 14">
+                        <span class="bname">비주안</span>
+                        <span class="pname">빈티지 티셔츠</span>
+                        <span class="price">
+                            <b>19,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (15)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (15).jpg" alt="여자옷 15">
+                        <span class="bname">비주안</span>
+                        <span class="pname">배색 티셔츠</span>
+                        <span class="price">
+                            <b>19,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (16)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (16).jpg" alt="여자옷 16">
+                        <span class="bname">비주안</span>
+                        <span class="pname">사선언발티셔츠</span>
+                        <span class="price">
+                            <b>19,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (17)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (17).jpg" alt="여자옷 17">
+                        <span class="bname">비주안</span>
+                        <span class="pname">다트진 PT</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (18)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (18).jpg" alt="여자옷 18">
+                        <span class="bname">비주안</span>
+                        <span class="pname">맞주름 와이드팬츠</span>
+                        <span class="price">
+                            <b>109,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (19)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (19).jpg" alt="여자옷 19">
+                        <span class="bname">비주안</span>
+                        <span class="pname">코튼 셔츠 자켓</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (20)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (20).jpg" alt="여자옷 20">
+                        <span class="bname">비주안</span>
+                        <span class="pname">밑단배색니트원피스</span>
+                        <span class="price">
+                            <b>129,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (21)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (21).jpg" alt="여자옷 21">
+                        <span class="bname">비주안</span>
+                        <span class="pname">언발란스 숏츠 원피스</span>
+                        <span class="price">
+                            <b>149,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (22)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (22).jpg" alt="여자옷 22">
+                        <span class="bname">비주안</span>
+                        <span class="pname">체크플라이어원피스</span>
+                        <span class="price">
+                            <b>129,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (23)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (23).jpg" alt="여자옷 23">
+                        <span class="bname">비주안</span>
+                        <span class="pname">카라배색니트티</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (24)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (24).jpg" alt="여자옷 24">
+                        <span class="bname">비주안</span>
+                        <span class="pname">코튼배기PT</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (25)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/women/여자옷 (25).jpg" alt="여자옷 25">
+                        <span class="bname">비주안</span>
+                        <span class="pname">플라이어바바리</span>
+                        <span class="price">
+                            <b>199,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!----//goods-wrap---->   
+            <!----paging---->
+            <div class="paging"></div>
+            <!----//paging---->
+        </div>
+        <!------//center-wrap------>
+    </div>
+    <!----------------//wrap---------------->
+
+
+
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

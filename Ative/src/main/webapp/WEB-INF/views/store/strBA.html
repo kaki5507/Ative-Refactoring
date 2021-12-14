@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 스토어(BAG&ACC),Ative Store BAG&ACC">
+    <meta name="keywords" content="에이티브,쇼핑몰,스토어,ATIVE,Shopping mall,BAG&ACC">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>스토어(BAG&ACC)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/store.css"><!--store 공통-->
+        <link rel="stylesheet" href="./css/strBA.css"><!--strBA-->
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lexend+Tera&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+    <!----------------wrap---------------->
+    <div id="wrap" class="container">
+        <!------line-nav------>
+        <nav class="line-nav">
+            <a href="../main/main.html">HOME</a>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="">NEW</option><!--php 로 연결해야함-->
+                    <option value="">MEN</option>
+                    <option value="">SHOES</option>
+                    <option value="" selected>BAG & ACC</option>
+                    <option value="">WOMEN</option>
+                </select>
+            </div>
+            <div class="dept">
+                <select name="selstore"><!--onchange 속성써야함-->
+                    <option value="" selected>백팩</option>
+                    <option value="">메신저/크로스백</option>
+                    <option value="">에코백</option>
+                    <option value="">팔찌</option>
+                    <option value="">반지</option>
+                    <option value="">목걸이</option>
+                </select>
+            </div>
+        </nav>
+        <!------//line-nav------>
+        <!------snb------>
+        <div id="snb">
+            <a class="snb-New" href="./strNew.html">NEW</a>
+            <a class="snb-Men" href="./strMen.html">MEN</a>
+            <!--Men-sub-->
+            <a class="Men-sub sub-page" href="">반팔티</a>
+            <a class="Men-sub sub-page" href="">긴팔티</a>
+            <a class="Men-sub sub-page" href="">후드</a>
+            <a class="Men-sub sub-page" href="">바지</a>
+            <!--//Men-sub-->
+            <a class="snb-Sho" href="./strSho.html">SHOES</a>
+            <!--Sho-sub-->
+            <a class="Sho-sub sub-page" href="">스니커즈</a>
+            <a class="Sho-sub sub-page" href="">캔버스/단화</a>
+            <a class="Sho-sub sub-page" href="">러닝화/피트니스화</a>
+            <a class="Sho-sub sub-page" href="">구두</a>
+            <!--//Sho-sub-->
+            <a class="snb-BA" href="./strBA.html">BAG & ACC</a>
+            <!--BA-sub-->
+            <a class="BA-sub sub-page" href="">백팩</a>
+            <a class="BA-sub sub-page" href="">메신저/크로스백</a>
+            <a class="BA-sub sub-page" href="">에코백</a>
+            <a class="BA-sub sub-page" href="">팔찌</a>
+            <a class="BA-sub sub-page" href="">반지</a>
+            <a class="BA-sub sub-page" href="">목걸이</a>
+            <!--//BA-sub-->
+            <a class="snb-Wm" href="./strWm.html">WOMEN</a>
+            <!--Wm-sub-->
+            <a class="Wm-sub sub-page" href="">반팔티</a>
+            <a class="Wm-sub sub-page" href="">긴팔티</a>
+            <a class="Wm-sub sub-page" href="">후드</a>
+            <a class="Wm-sub sub-page" href="">바지</a>
+            <a class="Wm-sub sub-page" href="">원피스</a>
+            <a class="Wm-sub sub-page" href="">스커트</a>
+            <!--//Wm-sub-->
+        </div>
+        <!------//snb------>
+        <!------center-wrap------>
+        <div id="center-wrap">
+            <!----goods-wrap---->
+            <ul class="goods-wrap">
+                <!--goods-list (1)-->
+                <li class="goods-list">
+                    <a href="http://127.0.0.1:5500/goods/goods.html">
+                        <img src="./images/bag&acc/가방 (1).jpg" alt="가방 1">
+                        <span class="bname">벤크</span>
+                        <span class="pname">[벤크] 암스테르담 2.0 미니 핑크</span>
+                        <span class="price">
+                            <b>178,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (2)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (2).jpg" alt="가방 2">
+                        <span class="bname">벤크</span>
+                        <span class="pname">[벤크] 암스테르담 2.0 미니 그레이</span>
+                        <span class="price">
+                            <b>178,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (3)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (3).jpg" alt="가방 3">
+                        <span class="bname">앤커버</span>
+                        <span class="pname">Two pocket original backpack-ivory</span>
+                        <span class="price">
+                            <b>89,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (4)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (4).jpg" alt="가방 4">
+                        <span class="bname">앤커버</span>
+                        <span class="pname">Two pocket original backpack-blue</span>
+                        <span class="price">
+                            <b>89,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>          
+                <!--goods-list (5)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (5).jpg" alt="가방 5">
+                        <span class="bname">앤커버</span>
+                        <span class="pname">Two pocket original backpack-black</span>
+                        <span class="price">
+                            <b>89,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (6)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (6).jpg" alt="가방 6">
+                        <span class="bname">앤커버</span>
+                        <span class="pname">Baloo lettering backpack-black</span>
+                        <span class="price">
+                            <b>89,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (7)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (7).jpg" alt="가방 7">
+                        <span class="bname">버빌리안</span>
+                        <span class="pname">럭셔리 백팩_BLACK</span>
+                        <span class="price">
+                            <b>93,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>     
+                <!--goods-list (8)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (8).jpg" alt="가방 8">
+                        <span class="bname">스코노</span>
+                        <span class="pname">폴리 베이직 라운드 백팩41</span>
+                        <span class="price">
+                            <b>79,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (9)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (9).jpg" alt="가방 9">
+                        <span class="bname">스코노</span>
+                        <span class="pname">폴리 3단형 스쿨백팩 41</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (10)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (10).jpg" alt="가방 10">
+                        <span class="bname">스코노</span>
+                        <span class="pname">폴리 더블 포켓 41</span>
+                        <span class="price">
+                            <b>89,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (11)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (11).jpg" alt="가방 11">
+                        <span class="bname">스코노</span>
+                        <span class="pname">패딩 스타일 라운드 백팩 81</span>
+                        <span class="price">
+                            <b>129,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (12)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (12).jpg" alt="가방 12">
+                        <span class="bname">스코노</span>
+                        <span class="pname">패딩 스타일 라운드 백팩 81</span>
+                        <span class="price">
+                            <b>129,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (13)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (13).jpg" alt="가방 13">
+                        <span class="bname">스코노</span>
+                        <span class="pname">19SS 스타일 가방 핑크</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (14)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (14).jpg" alt="가방 14">
+                        <span class="bname">스코노</span>
+                        <span class="pname">19SS 스타일 백팩 11</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (15)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (15).jpg" alt="가방 15">
+                        <span class="bname">스코노</span>
+                        <span class="pname">19SS 더블포켓 백팩11</span>
+                        <span class="price">
+                            <b>99,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (16)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (16).jpg" alt="가방 16">
+                        <span class="bname">몬스터리퍼블릭</span>
+                        <span class="pname">R.TWIN POCKET BACKPACK / BLACK</span>
+                        <span class="price">
+                            <b>69,300</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (17)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (17).jpg" alt="가방 17">
+                        <span class="bname">마스마룰즈</span>
+                        <span class="pname">마스마룰즈 The basic bagpack _ Black</span>
+                        <span class="price">
+                            <b>47,500</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (18)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (18).jpg" alt="가방 18">
+                        <span class="bname">마스마룰즈</span>
+                        <span class="pname">마스마룰즈 The basic bagpack _ ivory</span>
+                        <span class="price">
+                            <b>47,500</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (19)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (19).jpg" alt="가방 19">
+                        <span class="bname">마스마룰즈</span>
+                        <span class="pname">마스마룰즈 The basic bagpack _ beige</span>
+                        <span class="price">
+                            <b>47,500</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (20)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (20).jpg" alt="가방 20">
+                        <span class="bname">코너스</span>
+                        <span class="pname">포켓 백팩 KBA6605_GR</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (21)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (21).jpg" alt="가방 21">
+                        <span class="bname">코너스</span>
+                        <span class="pname">프린트 백팩 KBA6603_PD</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (22)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (22).jpg" alt="가방 22">
+                        <span class="bname">코너스</span>
+                        <span class="pname">카모 백팩 KBA6603_KH</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (23)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (23).jpg" alt="가방 23">
+                        <span class="bname">코너스</span>
+                        <span class="pname">화이트 백팩 WBN001BG_WH</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (24)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (24).jpg" alt="가방 24">
+                        <span class="bname">코너스</span>
+                        <span class="pname">카멜 백팩 WBN001BG_CL</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+                <!--goods-list (25)-->
+                <li class="goods-list">
+                    <a href="">
+                        <img src="./images/bag&acc/가방 (25).jpg" alt="가방 25">
+                        <span class="bname">코너스</span>
+                        <span class="pname">버건디 백팩 WBN001BG_BD</span>
+                        <span class="price">
+                            <b>29,000</b>
+                            <span>원</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!----//goods-wrap---->   
+            <!----paging---->
+            <div class="paging"></div>
+            <!----//paging---->
+        </div>
+        <!------//center-wrap------>
+    </div>
+    <!----------------//wrap---------------->
+
+
+
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

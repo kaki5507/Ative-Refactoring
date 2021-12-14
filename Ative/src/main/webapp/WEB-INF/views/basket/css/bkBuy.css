@@ -1,0 +1,135 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; margin: 0 auto;}
+#wrap > div:nth-child(1){height: 80px;}
+#wrap > p{height: 20px;}
+
+
+/*------bkBuy-guide------*/
+.bkBuy-guide{ padding-top: 50px; border-bottom: 3px double black;}
+/*----title-bkBuy----*/
+.title-bkBuy{width: 400px; height: 50px; float: left;line-height: 50px;}
+.title-bkBuy > h2{float: left;}
+.title-bkBuy > strong{font-size: 12px;}
+/*----bklevel 구매단계----*/
+.bklevel{width: 370px; height: 50px; float: right; font-size: 20px; line-height: 50px;}
+.bklevel > li{float: left;  margin: 0 5px; text-align: center;}
+.bklevel > li:nth-child(3){color: #e44c4c;}
+
+
+/*------keep-period 유지기간------*/
+.keep-period{clear: left; color: #666; font-size: 12px; margin: 10px 0;}
+
+
+/*------bkBuy-info------*/
+.bkBuy-info > ul:nth-child(2){height: 150px;}
+.bkBuy-info > ul > li:first-child{width: 20px; margin: 5px 0 0 0;}/*체크박스 크기 , 마진 다르게*/
+.bkBuy-info > ul > li:nth-child(2){width: 350px;}/*상품명*/
+.bkBuy-info > ul > li:nth-child(5){width: 120px;}/*정상가(할인가)*/
+.option {color: #e44c4c;}
+
+/*----goods-title 상품명,옵션 등등----*/
+.goods-title{height: 35px; line-height: 35px; border-top: 1px solid #666;}
+.goods-title > li{float: left; width: 80px; text-align: center; margin: 0 10px;}
+
+/*----goods-info 구매하려는 상품명,옵션 등등----*/
+.goods-info{clear: left;/*float:left 풀어주기위함*/ line-height: 120px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.goods-info > li{
+    float: left; width: 80px; height: 150px; 
+    text-align: center; margin: 0 10px; box-sizing: border-box; 
+    padding: 15px 0; position: relative;
+}
+.goods-info > li:nth-child(2) > img{height: 120px; float: left;}/*상품에 오는 이미지 크기 120px에 맞게*/
+/*20200606 장바구니 처음부분 그리고 옵션 a 태그 왼쪽 에서 마진 생김*/
+/*--product-info 상품 정보--*/
+.product-info{
+    float: left; 
+    line-height: normal; /*라인 원래대로*/
+    display: table;
+    font-size: 12px;
+    position: relative;
+    width: 230px;
+    height: 120px;
+}
+.product-info > span{text-align: left;height: 20px; display: table-row; margin-top: 20px;}
+.product-info > a{text-align: left;}
+.product-option {position: absolute; left: 0; bottom: 10px;}
+.product-option > a{display: block; width: 70px; height: 30px; padding:5px 5px 5px 10px; box-sizing: border-box; border: 1px solid #222;}
+/*브랜드 이름*/
+.bname{font-weight: bolder;}
+/*상품 이름*/
+.pname{font-weight: lighter;}
+
+/*--form_control--*/
+.form_control{width: 200px; height: 25px; border-radius: 3px; box-sizing: border-box; border: 1px solid rgba(192, 192, 192, 0.5);  margin-bottom: 10px;}
+
+
+
+
+
+
+/*------order-info------*/
+.order-info {width: 100%; height: 550px; margin:30px 0;}
+.order-info > h3{margin-bottom: 10px; border-bottom: 2px solid #666;}
+.order-info > div {
+    font-weight: normal; width: 100%; height: 60px; 
+    padding: 20px 0 10px 10px; font-size: 13px; 
+    border-bottom:1px solid rgba(192, 192, 192, 0.5); box-sizing: border-box;
+}
+.order-info div > label{width: 100px; display: block; float: left; font-size: 15px;}
+/*--주소--*/
+.order-info > div:nth-child(5){height: 130px;}
+.order-info > div:nth-child(5) > label{height: 100px; line-height: 100px;}
+/*--배송요구사항--*/
+.order-info > div:last-child{height: 160px; position: relative;}
+.order-require > span{font-size: 15px; line-height: 122px; float: left; width: 100px;}
+.order-require > textarea{
+    width: 800px; height: 80px; border: 1px solid rgba(192, 192, 192, 0.5);
+    resize: none; /*resize: none; 해야지 크기 줄이는거 없앨수 있음*/
+    padding:20px;float: left   ;
+}
+
+
+
+
+/*------pay-sort------*/
+.pay-sort {width: 100%; height: 250px; margin:30px 0;}
+.pay-sort > h3{margin-bottom: 10px; border-bottom: 2px solid #666;}
+.pay-sort > div{float: left; margin-right: 20px; padding-left: 20px; }
+.pay-sort > div > label{font-size: 17px; font-weight: bold;}
+
+.pay-guide{height: 150px; width:1020px; margin-top: 15px;}
+.guide-title{font-weight: bold;}
+.guide-info > span{display: none; word-break: break-all; white-space: pre-line;}
+.guide-info > span > b{color: #e44c4c;}
+.guide-info > span:first-child{display: block;}
+
+
+
+
+
+
+
+
+/*------pay-refund------*/
+.pay-refund{width: 100%; height: 200px; margin:30px 0;}
+.pay-refund > h4{font-size: 18px; padding-left: 0; margin-bottom: 10px; border-bottom: 2px solid #666;}
+.pay-refund > div{float: left; margin-right: 200px; margin-top: 20px; padding-left: 20px;}
+.pay-refund > div > label{font-size: 17px; font-weight: bold;}
+
+.refund-info > span{display: block; margin-top: 20px; white-space: pre-line;}
+.exchange-info > span{display: block; margin-top: 20px; white-space: pre-line;}
+
+/*------pay-agree------*/
+.pay-agree {width: 100%; height: 150px; margin:30px 0;}
+.pay-agree > h4{font-size: 18px; padding-left: 0; margin-bottom: 10px; border-bottom: 2px solid #666;}
+.pay-agree > div{margin: 10px 0;}
+.pay-agree > div > a{text-decoration: underline;}
+.pay-agree > h2{text-align: center;}
+.pay-agree > h2 > a{
+    display: block; width: 100px; height: 50px; 
+    margin: 0 10px; background-color: #222; line-height: 50px;
+    color: #fff; text-align: center; margin: 0 auto;
+    border-radius: 5px; font-size: 15px; box-sizing: border-box;
+}
+
+

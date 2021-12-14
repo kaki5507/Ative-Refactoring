@@ -1,0 +1,44 @@
+/*----------------wrap----------------*/
+#wrap{width: 1040px; height: 1350px; margin: 0 auto;}
+
+/*------title-sale------*/
+.title-sale{margin: 0 auto; position: relative;}
+.title-sale > img{margin: 0 auto; width: 1040px; margin-bottom: 50px;}
+/*----effect----*/
+.effect{position: absolute; font-size: 120px; color: #fff; top: 200px; left: 150px;}
+.effect > span{
+    position: relative; font-family: 'Bitter', serif; opacity: 0.2;
+    animation-name: shift; animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+/* 색상표 https://colorhunt.co/palette/191947 참조*/
+.effect > span:nth-child(1){color: #C70039; right: 300px;}
+.effect > span:nth-child(2){color: #111D5E; bottom: 300px;}
+.effect > span:nth-child(3){color: #F37121; top: 300px;}
+.effect > span:nth-child(4){color: #FFBD69; right: 300px;}
+
+/*------snb------*/
+#snb{width: 100px; float: left; position: sticky;}
+#snb > a{display: block; margin:5px 0; font-size: 13px; color: #222; font-weight: 800;}
+#snb > a:first-child{color:  #e44c4c;}
+#snb > .sub-page{font-size: 8px; font-weight: 400;}
+
+/*------center-wrap------*/
+#center-wrap{margin: 0 auto; width: 800px; background-color: #f3f3f3;}
+/*----goods-wrap----*/
+.goods-wrap {padding-left: 10px;}
+.goods-list {width: 135px; height: 170px; float: left; margin: 30px 10px;}
+.goods-list > a > span{display: block; font-size: 8px; line-height: 15px;}
+.goods-list > a > img{width: 135px; margin-bottom: 10px;}
+.goods-list > a > .bname{font-weight: normal; color: #666;}
+.goods-list > a > .pname{font-weight: 500; color: #111; white-space: nowrap; text-overflow: ellipsis;/*글자가 넓이를 넘을 경우 생략부호 표시*/ overflow: hidden;}
+/*--상품 가격--*/
+.price { padding-top: 10px;}
+.price > b { font-size: 12px;}
+.strike-price{float: right;}
+.strike-price > em{font-style: normal; text-decoration: line-through;}
+.strike{color: #e44c4c;}
+/*-- 글자 색 변경 --*/
+@keyframes shift{
+    to{color: #fff;}
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 상품(Goods),Ative Goods">
+    <meta name="keywords" content="에이티브,쇼핑몰,상품,ATIVE,Shopping mall,Goods">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>상품(Goods)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/goods.css">
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+        <script type="text/javascript" src="./js/goods.js"></script>
+        <!-- price-menu fixed 하고 마우스 스크롤 계산해서 어느정도 내려오면 오른쪽에 따라다니게 해야함 -->
+        <!-- 카드 안내 페이지 팝업 으로 해야함 -->
+        <!-- 할인은 정상가에서 나누기 오른쪽 퍼센트 만큼 해서 할인가가 나와야함 -->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+    <!----------------wrap---------------->
+    <div id="wrap">
+        <!------goods-wrap 맨 위 상품 정보랑 이미지------>
+        <div id="goods-wrap">
+            <!----goods-img---->
+            <div class="goods-img"><img src="./images/goodsBig.jpg" alt="상품 큰 이미지"></div>
+            <!----//goods-img---->
+            <!----goods-info---->
+            <div class="goods-info">
+                <!--brand-name-->
+                <div class="brand-name">
+                    <!-- 브랜드 이름보단 상품 페이지 여서 상품 이름이 더 중요 > h2 -->
+                    <h3>브랜드이름</h3>
+                    <h2>챔피온_크루넥 티셔츠_211985-WW001</h2>
+                    <span>회원가입 즉시 15% 쿠폰 (일부 상품 제외)</span>
+                </div>
+                <!--//brand-name-->
+                <!--price-->                        
+                <div class="price">
+                    <dl><!--dl 용어 설명 목록--> 
+                        <dt>정상가</dt><!-- dt 용어 제목-->
+                        <dd class="ogMoney">109,000원</dd><!-- dd 용어 설명-->
+                    </dl>
+                    <dl class="sale-price">
+                        <dt class="saleMoney">할인가</dt>
+                        <dd class="saleRatio"></dd><i class="fas fa-caret-down"></i><!-- 자바스크립트로 50%된 가격 -->
+                    </dl>
+                    <dl>
+                        <dt>배송비</dt>
+                        <dd>무료배송</dd>
+                    </dl>
+                    <dl>
+                        <dt>배송방법</dt>
+                        <dd>국내배송/입점사 배송</dd>
+                    </dl>
+                    <dl>
+                        <dt>평균 발송일</dt>
+                        <dd>7일~14일</dd>
+                    </dl>
+                    <dl>
+                        <dt>무이자 할부안내</dt>
+                        <dd><a href="#">카드안내</a></dd>
+                    </dl>
+                </div>
+                <!--//price-->
+                <!--price-menu-->
+                <div class="price-menu">
+                    <select name="price-size" id="price-size">
+                        <option value="size-req" selected>사이즈 선택 (필수)</option><!--사이즈 선택 (필수) 먼저 보이게-->
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+
+                    <!--상품 구매 방법-->
+                    <div class="buy-method">
+                        <a href="#">장바구니</a>
+                        <a href="#">바로구매</a>
+                    </div>
+                </div>
+                <!--//price-menu-->                  
+            </div>
+            <!----//goods-info---->
+        </div>
+        <!------//goods-wrap------>
+        <!------brand-info 브랜드 이름/ 정보------>
+        <div class="brand-info">
+          <dl>
+              <dt><img src="./images/brandsmallLogo.jpg" alt="챔피온 스몰 로고"></dt>
+              <dd>
+                  <h4>챔피온 CHAMPION</h4>
+                  <span>CHAMPION(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.</span>
+              </dd>
+          </dl>
+        </div>
+        <!------//brand-info------>
+        <!------navi-goods------>
+        <nav class="navi-goods">
+            <a href="#">상품상세정보</a>
+            <a href="#">상품 리뷰 0</a>
+            <a href="#">상품문의 0</a>
+            <a href="#">교환/반품</a>
+        </nav>
+        <!------//navi-goods------>
+        <!------satisfaction 만족도------>
+        <div class="satisfaction">
+            <span>
+                <strong>고객만족도</strong>
+                <em><img src="./images/star/4star.png" alt="4점"></em><!-- 별점 제이 쿼리로 서버 연동해서 값 받아서 해야되는데 어떻게 하는지 ? -->
+            </span>
+            <span>
+                <strong>상품만족도</strong>
+                <em><img src="./images/star/4.5star.png" alt="4.5점"></em>
+            </span>
+            <span>
+                <strong>배송만족도</strong>
+                <em><img src="./images/star/3.5star.png" alt="3.5점"></em>
+            </span>
+        </div>
+        <!------//satisfaction 만족도------>
+        <!------goods-review 상품 리뷰------>
+        <table class="goods-review">
+            <thead>
+                <tr>
+                    <th>평점</th>
+                    <th>내용</th>
+                    <th>작성자</th>
+                    <th>등록일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 회원 후기 -->
+                <tr>
+                    <td><img src="./images/star/5star.png" alt="5점"></td>
+                    <td class="contents">
+                        <img class="user-review" src="./images/user-img01.png" alt="회원 리뷰">
+                        <span>사이즈 변해서 기본 아이템하나 필요해서 샀는데 가격에 비하면 되게 괜찮네요 ㅎㅎ 근데 사이즈가 조금 큰 느낌이에요</span>
+                    </td>
+                    <td>태그호이어</td>
+                    <td>2020-07-14</td>
+                </tr>
+                <!-- 회원 후기 -->
+                <tr>
+                    <td><img src="./images/star/4.5star.png" alt="4.5점"></td>
+                    <td class="contents">
+                        <img class="user-review" src="./images/user-img02.png" alt="회원 리뷰">
+                        <span>사진이 좀 쭈글쭈글하고 어둡게 나왔지만,, 사진과 달라요 화면 그대로의 흰색과 사이즈도 너무 찰떡ㅋㅅㅋ 맘에 들어옹</span>
+                    </td>
+                    <td>아쿠아레이서</td>
+                    <td>2020-07-13</td>
+                </tr>
+            </tbody>
+        </table>
+        <!------//goods-review 상품 리뷰------>
+        <!------goods-detail 상품 상세 정보------>        
+        <div class="goods-detail">
+            <!-- ★★★★★이미지 div로 공간 가지고 있어야함★★★★★ -->
+            <img class="img-detail" src="./images/champion-info.jpg" alt="챔피언 브랜드">
+        </div>
+        <!------//goods-detail 상품 상세 정보------>
+
+        <!------goods-mark 상품 표기------>
+        <table class="goods-mark">
+            <tbody>
+                <tr>
+                    <th>제품 소재</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>색상</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>치수</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>제조자,수입품의 경우 수입자를 함께 표기</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>제조국</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>세탁방법 및 취급시 주의사항</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>제조연월</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>품질보증기준</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>A/S 책임자와 전화번호</th>
+                    <td>상세페이지참조</td>
+                </tr>
+                <tr>
+                    <th>기타</th>
+                    <td>내용없음</td>
+                </tr>
+            </tbody>
+        </table>
+        <!------//goods-mark 상품 표기------>
+    </div>
+    <!----------------//wrap---------------->
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

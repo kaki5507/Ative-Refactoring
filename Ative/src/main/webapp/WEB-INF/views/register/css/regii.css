@@ -1,0 +1,64 @@
+/*-----------wrap-----------*/
+#wrap {margin: 0 auto; width: 1040px;}
+/*------reglevel-step------*/
+.reglevel > .reglevel-step > .step:nth-child(3){border-bottom: 2px solid black;}
+/*------member-join------*/
+.member-join {width: 100%; height: 100px;}
+.member-join > p{height: 50px;}
+.member-join > h2{margin-top: 30px; font-size: 15px;}
+.member-join > ul > li{line-height: 20px; font-size: 13px;}
+
+/*필수입력 표시*/
+.must-write{font-size: 0;}/*필수입력 < 안보이게 font-size0*/
+.must-write::after{ /*must-write 다음에 오게*/
+    content: '*'; /*content를 *로함*/
+    display: inline-block; width: 5px; height: 5px; 
+    font-size: 12px; color: #c38447;
+}
+
+/*------member-info------*/
+.member-info {width: 100%; height: 800px;}
+.member-info > div {
+    font-weight: normal; width: 100%; height: 60px; 
+    background-color: #f3f3f3; padding: 20px 0 10px 10px; font-size: 13px; 
+    border-bottom:1px solid rgba(192, 192, 192, 0.5); box-sizing: border-box;
+}
+/*--overlap 중복확인 버튼--*/
+.overlap{border-radius: 2px; background-color: #222; border:0; color: #f3f3f3; box-sizing: border-box; padding: 0 8px; line-height: 22px;}
+
+/*--form_control--*/
+.form_control{width: 200px; border-radius: 3px; box-sizing: border-box; border: 1px solid rgba(192, 192, 192, 0.5);}
+/*--form_birth--*/
+.form_birth{width: 50px; box-sizing: border-box; border: 1px solid #222;}
+/*--userCon--*/
+#userCon{display: block; margin: 10px 0 10px 120px;}
+
+
+/*--email-Ag 이메일 수신동의--*/
+.email-Ag{margin-left: 120px; margin-top: 20px;}
+/*--tel-Ag 핸드폰 수신동의--*/
+.tel-Ag{margin-left: 120px; margin-top: 10px;}
+
+/*----group-email----*/
+.member-info > .group-email{height: 120px;}
+.group-email > span{margin-left: 120px; margin-top: 10px; display: inline-block; font-size: 11px;}
+
+/*----group-tel----*/
+.group-tel > span{width: 100%; margin-left: 120px; display: inline-block; font-size: 11px;}
+.member-info > .group-tel{height: 160px;}
+
+/*----왼쪽 레이블----*/
+.member-info > div > label{width: 120px; height: auto; display: block; float: left;}
+/*--userGender 성별 (label->div)--*/
+.userGender{width: 120px; height: auto; display: block; float: left;}
+
+/*------shift-go------*/
+.shift-go{
+    bottom:100px;
+}
+/*------join 회원가입------*/
+#btn_join{
+    border: 2px solid #222; box-sizing: border-box; padding: 20px 60px; 
+    font-weight: bolder; display: inline-block; background-color: #222; 
+    color: white; font-size: 18px;
+}

@@ -1,0 +1,47 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; margin: 0 auto;}
+#wrap > div:first-child{height: 80px;}
+#wrap > div{height: 400px;}
+
+
+/*------bkCp-guide------*/
+.bkCp-guide{ padding-top: 50px; border-bottom: 3px double black;}
+/*----title-bkCp----*/
+.title-bkCp{width: 400px; height: 50px; float: left;line-height: 50px;}
+.title-bkCp > h2{float: left;}
+.title-bkCp > strong{font-size: 12px;}
+/*----bklevel 구매단계----*/
+.bklevel{width: 370px; height: 50px; float: right; font-size: 20px; line-height: 50px;}
+.bklevel > li{float: left;  margin: 0 5px; text-align: center;}
+.bklevel > li:nth-child(5){color: #e44c4c;}
+
+/*----bkCp-thanks----*/
+.bkCp-thanks > img{
+    display: block; margin: 0 auto; width: 200px;
+    animation: thanks linear 1s;
+    animation-delay: 0s; /*로딩되고 1초 뒤에 시작*/
+    opacity: 0;
+    animation-fill-mode: forwards; /*animation-fill-mode 속성은 마지막 모습으로 멈춤*/
+}
+/*--truck--*/
+.fa-truck{font-size: 80px; display: block; float: left; margin-left: 300px; margin-top: 50px;}
+.bkCp-thanks > span{font-size: 20px; text-align: center; display: block;}
+/*----주문정보----*/
+.order-info{margin-top: 50px;}
+/*--주문번호--*/
+.order-num{line-height: 50px; margin-left: 30px;}
+/*--주문날짜--*/
+.order-date{line-height: 20px; margin-left: 30px;}
+
+/*--------------------------------------animation--------------------------------------*/
+@keyframes thanks{
+    from{
+        transform:rotateY(180deg) scale(0);
+        color: white;
+    }
+    to{
+        opacity: 1; 
+        transform: rotateY(0deg) scale(1.2);
+        color: rgb(45,180,0);
+    }
+}

@@ -1,0 +1,8 @@
+/*-----------wrap-----------*/
+#wrap {width: 1040px; margin: 0 auto;}
+#wrap > p{
+    font-size: 15px;     
+    overflow-y: auto; /*y축 height만큼 자동 으로 해줌*/
+    word-break: break-all; /*표나 상자의 크기를 유지하면서 '글자'단위로 끊어줌 단어단위로 끊어줄수도 있음*/
+    white-space: pre-line; /*마크업에서 줄바꿈 한 것이 적용되면서 width를 넘어간 것이 텍스트에 자동적용*/
+}

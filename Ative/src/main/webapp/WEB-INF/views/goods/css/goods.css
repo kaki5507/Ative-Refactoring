@@ -1,0 +1,82 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; margin: 0 auto;}
+
+/*------goods-wrap------*/
+#goods-wrap > div{box-sizing: border-box; width: 520px; height: 520px; float: left;}
+
+/*----goods-img----*/
+.goods-img > img{width: 520px;}
+
+/*----goods-info----*/
+.goods-info{box-sizing: border-box; padding: 20px;}
+/*--brand-name--*/
+.brand-name{box-sizing: border-box; border-bottom: 2px solid #222;}
+.brand-name > h3{font-size: 15px; color: #666; line-height: 35px;}
+.brand-name > h2{font-size: 18px; font-weight: 600; color: #222;}
+.brand-name > span{font-size: 12px; color: #666; line-height: 25px;}
+/*--price--*/
+.price{box-sizing: border-box; bottom: 1px solid #efefef;}
+.price > dl{display: table; font-size: 16px;}
+.price > dl > dt,dd{padding: 10px; display: table-cell;}
+.price > dl > dt{width: 120px;}
+/* 할인가 ■■■■■■■■■■■■■■■■■■■■■ 할인가격 javascript로 ■■■■■■■■■■■■■■■■■■■■■*/
+.sale-price{
+    display: none;
+}
+.sale-price > i{color: #e44c4c; font-size: 25px;}
+/*--price-menu 상품 사이즈 선택 , 장바구니 , 바로구매 --*/
+.price-menu{padding-top: 5px; box-sizing: border-box; border-top: 1px solid #efefef;}
+/* 마우스 스크롤 위치 800 이하 될 때*/
+/* 참조 - fixed 를 쓰면 상위 요소에 영향을 받지 않고 브라우저 화면의 상대위치로 결정됨 */
+.price-menu-clone{position: fixed; top: 10px; right: 150px;}
+
+.buy-method{position: relative; top: 40px; box-sizing: border-box; font-weight: 700; height: 65px;}
+.buy-method > a{float: left; width: 70px; padding: 20px 83px; border: 2px solid #222; background-color: #222; color: #fff;}
+.buy-method > a:first-child{border-right: 0px; background-color: white; color: #222;}/* 첫번째 a 태그 보더 없게 */
+#price-size{width: 480px; height: 30px; font-size: 15px;  box-sizing: border-box; padding: 0 10px; margin-top: 20px; border: 1px solid #666;}
+#price-size:checked{margin: 1px solid #666;}
+
+/*------brand-info 브랜드 미니 정보------*/
+.brand-info{height: 150px; clear: left; box-sizing: border-box; padding: 20px; border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7;}
+.brand-info > dl{display: table; line-height: 20px;}
+.brand-info > dl > dt,dd{padding: 10px; display: table-cell; font-size: 13px;}
+.brand-info > dl > dd > span{color: #666; display: inline-block; margin-top: 20px;}
+
+/*------navi-goods 상품 리뷰------*/
+.navi-goods{display: block; border-bottom: 1px solid #000; height: 61px;}/* height 따로 지정해 줘야함 */
+.navi-goods > a{display: block; width: 25%; float: left; text-align: center; box-sizing: border-box; padding: 20px; border-right: 1px solid #ccc;}
+.navi-goods > a:first-child{border-left: 1px solid #ccc;}
+
+/*------satisfaction 만족도------*/
+.satisfaction{margin:20px 0; width: 1040px; height: 100px; background-color: #f9f9f9; border: 1px solid #e7e7e7; display: table;}
+.satisfaction > span{display: table-cell; text-align: center; box-sizing: border-box; border: 1px solid #ddd; padding: 20px 0;}
+.satisfaction > span:nth-child(1){border-right: 0;}
+.satisfaction > span:nth-child(2){border-right: 0;}
+.satisfaction > span > em{font-style: normal; display: block; margin-top: 10px;}
+
+/*------goods-review------*/
+.goods-review{width: 1040px; height: auto; border-spacing: 0px;}/* 기본 속성에 border-spacing 2px 이 들어가있는것을 확인함으로써 border-spacing을 강제적으로 0px로 해야지 간격이 안남음*/
+/*----thead----*/
+.goods-review > thead{background-color: #f3f3f3; padding: 10px 0;}
+.goods-review > thead > tr > th{padding: 10px 0;}
+.goods-review > thead > tr > th:nth-child(1){width: 70px;}/* 평점 */
+.goods-review > thead > tr > th:nth-child(2){width: 210px;}/* 내용 */
+.goods-review > thead > tr > th:nth-child(3){width: 140px;}/* 작성자 */
+.goods-review > thead > tr > th:nth-child(4){width: 140px;}/* 등록일 */
+/*----tbody----*/
+.goods-review > tbody > tr > td{text-align: center; padding: 10px;}
+/*--contents 회원 후기 입력 내용--*/
+/*■ 글자수 제한 서버에서 받을때 500 자 ■*/
+.contents > img{float: left;}
+.contents > span{float: left; text-align: left; box-sizing: border-box; padding: 0 5px; width: 65%; word-break: break-all;}
+.user-review{width: 150px; height: 150px; position: relative; border-radius: 10px; overflow: hidden;}
+
+/*------goods-detail------*/
+
+/*------goods-mark------*/
+.goods-mark{
+    width: 800px; font-size: 15px; border-collapse: collapse; /* 겹치는 부분을 한줄로 해줍니다. */ margin: 30px auto;
+}
+.goods-mark > th,td{padding: 15px;}
+.goods-mark > th{text-align: center; background-color: #f9f9f9; width: 40%;}
+.goods-mark > td{text-align: left; background-color: #fff; color: #777;}

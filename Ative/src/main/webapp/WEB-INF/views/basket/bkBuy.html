@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 장바구니 주문결제,Ative Basket Buy">
+    <meta name="keywords" content="에이티브,쇼핑몰,장바구니,ATIVE,Shopping mall,Buy">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>에이티브 장바구니(주문결제)</title>
+        <!--css-->
+        <link rel="stylesheet" href="../common/css/common.css"><!--공통 css-->
+        <link rel="stylesheet" href="./css/bkBuy.css">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <!--자바스크립트-->
+        <script type="text/javascript" src="../common/js/jquery-2.1.1.min.js"></script><!--필수 -->
+        <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script><!--선택 더 부드러운 디자인-->
+        <script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script><!--좀더 많은 용법사용가능-->
+        <script type="text/javascript" src="../common/js/prefixfree.min.js"></script><!--벤더프리픽스 방지--> 
+        <script type="text/javascript" src="../common/js/common.js"></script><!--공통 js-->
+        <script type="text/javascript" src="./js/bkBuy.js"></script><!--bkBuy js-->
+        <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script><!--카카오 주소 api-->
+</head>
+<body>
+    <!------header------>
+    <header></header>
+    <!------//header------>
+
+
+
+    <!----------------wrap---------------->
+    <div id="wrap">
+        <!------bkBuy-guide------>
+        <div class="bkBuy-guide">
+            <!----title-bkBuy---->
+            <div class="title-bkBuy">
+                <h2>주문결제</h2>
+                <strong>어서오세요. 김승현 님 오늘도 즐거운 쇼핑되세요.</strong>
+            </div>
+
+            <!----bklevel---->        
+            <ul class="bklevel">
+                <li><i class="fas fa-shopping-bag"></i><!--가방-->장바구니</li>
+                <li><i class="fas fa-chevron-right"></i><!--오른쪽 화살표--></li>
+                <li><i class="fas fa-clipboard-list"></i><!--리스트-->주문결제</li>
+                <li><i class="fas fa-chevron-right"></i><!--오른쪽 화살표--></li>
+                <li><i class="fas fa-clipboard-check"></i><!--리스트 체크-->주문완료</li>
+            </ul>
+        </div>
+        <!------//bkBuy-guide------>
+
+        <p class="keep-period">상품 보관 기간 : <strong>15일 동안 보관됩니다.</strong> 더 오래 보관하고 싶은 상품은 ♡ (좋아요) 추가하시길 바랍니다.</p>
+
+        <!------bkBuy-info------>
+        <div class="bkBuy-info">
+            <!----goods-title---->  
+            <ul class="goods-title">
+                <li>
+                    <input type="checkbox" id="all_check" name="cart_list" value="전체선택" onclick="allCheck(this);">
+                    <label for="all_check"></label><!--전체선택-->
+                </li>
+                <li>상품명</li>
+                <li class="option">옵션</li>
+                <li>수량</li>
+                <li>정상가(할인가)</li>
+                <li>할인금액</li>
+                <li>총합계</li>
+                <li>배송비</li>
+            </ul>
+            <!----goods-info---->  
+            <ul class="goods-info">
+                <li>
+                    <input type="checkbox" id="user_check" name="cart_list" value="선택">
+                    <label for="user_check"></label><!--선택-->
+                </li>
+                <li>
+                    <img src="./images/champion-small.jpg" alt="챔피온 후드(작은 이미지)">
+                    <div class="product-info">
+                        <span class="bname">[챔피온 CHAMPION]</span>
+                        <span class="pname">REVERSE WEAVE PULLOVER HOOD GF68-Y07470 - BLACK</span>
+                        <span class="product-option"><a href="">옵션변경</a><!--옵션변경 버튼 팝업--></span>
+                    </div>
+                </li>
+                <li class="option">XL</li>
+                <li>1</li>
+                <li>104,000원</li>
+                <li>0원</li>
+                <li>100,400원</li>
+                <li>무료</li>
+            </ul>
+
+        </div>
+        <!------//bkBuy-info------>
+
+
+        <!------order-info------>
+        <div class="order-info">
+            <h3>주문하시는분</h3>
+            <!--주문자 이름-->
+            <div class="order-name">
+                <label for="userName">이름</label>
+                <input class="form_control" type="text" id="userName" name="userName" maxlength="6">
+            </div>
+            <!--주문자 이메일-->
+            <div class="order-email">
+                <label for="userEmail">이메일</label>
+                <input class="form_control" type="email" id="userEmail" name="userEmail" maxlength="50">
+            </div>
+            <!--주문자 번호-->
+            <div class="order-tel">
+                <label for="userTel">휴대폰 번호</label>
+                <input class="form_control" type="tel" id="userTel" name="userTel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" maxlength="13">                
+            </div>
+            <!--주문자 주소-->
+            <div class="order-address">
+                <label for="userTel">주소</label>
+                <input class="form_control" type="text" id="order_postcode" placeholder="우편번호"><!--다음 api 참조-->
+                <input type="button" onclick="order_daumPostcode()" value="우편번호 찾기"><br>
+                <input class="form_control" type="text" id="order_address" placeholder="주소"><br>
+                <input class="form_control" type="text" id="order_detailAddress" placeholder="상세주소">
+                <input class="form_control" type="text" id="order_extraAddress" placeholder="참고항목">
+            </div>
+            <!--주문자 배송요구사항-->
+            <div class="order-require">
+                <span>배송요구사항</span>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <!------//order-info------>
+
+
+        <!------pay-sort------>
+        <div class="pay-sort">
+            <h3>결제정보</h3>
+            <!--페이코 결제-->
+            <div class="pay-payco">
+                <input type="radio" class="pchk" id="p-payco" name="pay-method" value="payco" checked>
+                <label for="p-payco">페이코 결제</label>       
+            </div>
+            <!--신용카드 결제-->
+            <div class="pay-credit">
+                <input type="radio" class="pchk" id="p-credit" name="pay-method" value="credit">
+                <label for="p-credit">신용카드 결제</label>       
+            </div>
+            <!--가상계좌 입금 VA = Virtual Account-->
+            <div class="pay-VA">
+                <input type="radio" class="pchk" id="p-VA" name="pay-method" value="va">
+                <label for="p-VA">가상계좌 입금</label>       
+            </div>
+            <!--카카오톡 결제-->
+            <div class="pay-kakao">
+                <input type="radio" class="pchk" id="p-kakao" name="pay-method" value="kakao">
+                <label for="p-kakao">카카오톡 결제</label>       
+            </div>
+            <!--휴대폰 결제-->
+            <div class="pay-tel">
+                <input type="radio" class="pchk" id="p-tel" name="pay-method" value="tel">
+                <label for="p-tel">휴대폰 결제</label>       
+            </div>
+            <!--결제 안내-->
+            <div class="pay-guide">
+                <div class="guide-title">
+                    <span>결제정보</span>
+                </div>
+                <div class="guide-info">
+                    <span>	
+                        <b>- TOSS 간편결제쿠폰 사용시 토스 결제만 가능합니다</b>
+                        <b>- TOSS 간편결제시 ATIVE 적립금 1 %가 적립됩니다.</b>
+                        - 현금영수증은 자동으로 신청되며, TOSS가 직접 발행합니다.
+                        - 결제 및 사용관련 문의는 TOSS고객센터(1599-4905 / 24시간 연중무휴)로 부탁드립니다.
+                        - 간편결제는 ATIVE에서 제공하는 무이자 할부와 무관하며, 서비스사의 별도 기준이 적용되니 자세한 내용은 해당 서비스사를 확인해 주세요.
+                    </span>
+                    <span>
+                        - 고객이 온라인 쇼핑몰에서 상품 및 서비스를 신용카드로 진행하는 결제 서비스입니다.
+                        - 카드번호 유효기간 등의 신용정보는 안전하게 암호화되어 해당 신용카드사로 전달됩니다.
+                        - 1,000원 이하의 금액은 신용카드로 결제가 불가능 합니다.
+                        - 결제시 결제창이 나타나지 않을 경우 또는 안전결제 모듈이 설치 되지 않을경우 여기를 눌러
+                        수동으로 플러그인을 설치하시면 됩니다.
+                    </span>
+                    <span>	
+                        - 주문완료 후 24시간 이내 입금완료 해주셔야합니다. (미입금 시 주문 자동 취소)
+                        - 가상계좌 환불시 등록된 기본 환불통장으로 환불처리 됩니다.
+                        - 결제시 결제창이 나타나지 않을 경우 또는 안전결제 모듈이 설치 되지 않을경우 여기를 눌러
+                        수동으로 플러그인을 설치하시면 됩니다.
+                    </span>
+                    <span>
+                        -카카오페이는 카카오톡에서 카드를 등록, 간단하게 비밀번호만으로 결제할 수 있는 빠르고 편리한 모바일 결제 서비스입니다.
+                        -지원 카드 : 모든 카드 등록/결제 가능
+                    </span>
+                    <span>	
+                        - 회원별 휴대폰 결제 한도는 통신사별 이용제한에 따라 적용됩니다.
+                        - 환불 시 등록된 기본 환불통장으로 환불처리 됩니다. 계좌정보확인
+                        - 결제시 결제창이 나타나지 않을 경우 또는 안전결제 모듈이 설치 되지 않을경우 여기를 눌러
+                        수동으로 플러그인을 설치하시면 됩니다.
+                    </span>
+                </div>
+            </div> 
+        </div>
+        <!------//pay-sort------>
+        <!------pay-refund------>
+        <div class="pay-refund">
+            <h4>품절 시 처리 방법</h4>
+            <div class="refund-info">
+                <input type="radio" id="refund" name="refund-method" value="환불방법">
+                <label for="refund">Refund 환불</label>
+                <span>
+                    환불을 선택하시면 별도의 연락 없이
+                    선택하신 결제 방법으로 환불해 드립니다.
+                </span>
+            </div>
+            <div class="exchange-info">
+                <input type="radio" id="Exchange" name="refund-method" value="환불방법">
+                <label for="Exchange">Exchange 교환</label>
+                <span>
+                    교환을 선택하시면 주문자 정보를 통해
+                    연락드린 후 교환을 도와드리겠습니다.
+                </span>                
+            </div>
+        </div>              
+        <!------//pay-refund------>        
+        <!------pay-agree------>
+        <div class="pay-agree">
+            <h4>결제 동의</h4>
+            <div class="pg"><!--pg=Personal Information Collection and Utilization Guide(personal guide로 줄임)-->
+                <input type="checkbox" id="pg_check" name="agree_list" value="개인정보 수집 및 이용안내">
+                <label for="pg_check">개인정보 수집 및 이용안내 (필수)</label>
+                <a href="">내용보기</a>         
+            </div>
+
+            <div class="p3"><!--p3=Personal Provision of third(3) party information-->
+                <input type="checkbox" id="p3_check" name="agree_list" value="개인정보 제3자 제공 동의">
+                <label for="p3_check">개인정보 제3자 제공 동의(필수)</label>
+                <a href="">내용보기</a>
+            </div>
+
+            <h2><a href="./bkCp.html">상품결제하기</a></h2>
+        </div>
+        <!------//pay-agree------>
+    </div>
+    <!----------------//wrap---------------->
+
+
+
+
+
+    <!------footer------>
+    <footer></footer>
+    <!------//footer------>
+</body>
+</html>

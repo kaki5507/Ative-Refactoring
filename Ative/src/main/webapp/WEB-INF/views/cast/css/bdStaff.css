@@ -1,0 +1,42 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; height: 700px; margin: 20px auto;}
+#wrap > div{width: 800px; background-color: #F3f3f3; margin: 0 auto; border-top: 1px solid rgba(192, 192, 192, 0.7); padding: 10px; box-sizing: border-box;}
+#wrap > div > strong{display: inline-block; width: 50px;}
+/*----게시판 칸----*/
+#wrap > .bd-guide{font-size: 25px; margin-bottom: 30px;} /* 그냥 .bd-guide 이면 안먹힘*/
+#wrap > div:nth-child(2){height: 80px;}
+#wrap > div:nth-child(3){height: 50px;}
+#wrap > div:nth-child(4){height: 300px;}
+#wrap > div:nth-child(5){height: 80px;}
+
+/*----staff-option----*/
+.staff-option > span{font-size: 10px; display: block;}
+.staff-option > strong{line-height: 50px;}
+.staff-option label {
+    position:relative; cursor:pointer; display:inline-block; vertical-align:middle; overflow:hidden; width:100px; 
+    height:20px; background:rgb(52, 152, 219); color:#fff; font-size: 12px; margin-left: 20px;
+    text-align:center; line-height:20px; border-radius: 5px;
+}
+.staff-option label input {position:absolute; width:0; height:0; overflow: hidden;}
+.staff-option input[type=text] {
+    vertical-align:middle; display:inline-block; width:400px;
+    height:28px; line-height:28px; font-size:11px;
+    padding:0; border:0; border:1px solid #777;
+}
+
+/*----title-staff----*/
+.title-staff > input{width: 700px; padding: 5px; font-size: 0.6em;border: 1px solid rgba(192, 192, 192, 0.5);}
+
+/*----staff-contents----*/
+.staff-contents > strong{position: relative; bottom: 145px;}
+.staff-contents > textarea{
+    resize: none; /*resize: none; 해야지 크기 줄이는거 없앨수 있음*/
+    border: 1px solid rgba(192, 192, 192, 0.5); width: 712px; height: 280px;
+    box-sizing: border-box; padding: 10px;
+}
+
+/*----write-btn----*/
+.write-btn {text-align: center;}
+.write-btn > a{box-sizing: border-box; padding: 10px; border-radius: 10px; display: inline-block; margin: 10px 20px 0;}
+.write-btn > a:first-child{background-color: #555; color: #fff;}
+.write-btn > a:last-child{background-color: #222; color: #fff;}

@@ -1,0 +1,72 @@
+/*-----------wrap-----------*/
+#wrap{width: 1040px; margin: 0 auto;}
+*{font-family: 'Montserrat', sans-serif;}
+
+/*------line-nav------*/
+.line-nav{font-size: 12px; color: #666; width: 800px; height: 40px; margin: 0 auto; padding-top: 20px;}
+.line-nav > a::after{content: ""; height: 10px; display: inline-block; width: 1px; margin: 5px 0 0 20px; background-color: #ccc;}
+/*----dept----*/
+.dept{display: inline-block; width: 100px;}
+.dept > select{border: 0;}
+
+
+/*------brand-list------*/
+.brand-list{display: table;}
+.brand-list > dt{display: table-cell; vertical-align: top; font-size: 30px; font-weight: 100;}
+.brand-list > dd{display: table-cell;}
+.brand-list > dd > ul > li{width: 200px; float: left; margin: 0 10px;}
+
+/*--brand-title--*/
+.brand-title{width: 200px;}/*로고 이미지*/
+/*--brand-contents--*/
+.brand-contents{width: 200px;}
+.brand-contents > img{display: block; width: 70px; float: left;}/*썸네일 이미지*/
+.brand-contents > .brand-info{ width: 200px; height: 70px; box-sizing: border-box; padding: 10px;}
+.brand-info > span{display: inline-block; width: 115px; height: 30px; font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: pre; margin-left: 5px;}
+.brand-info > .bname{font-size: 11px; height: 20px; font-weight: 700;}
+
+
+/*------castBn-wrap------*/
+#castBn-wrap{width: 1040px; text-align: center; margin-top: 50px;}
+.title-castBn{font-weight: 100; font-size: 40px;}
+.brand-search { border: 0; text-align: center;}
+.brand-search > legend {display: none; position: absolute;}
+
+/*----searchForm 검색 입력창----*/
+#searchForm{position: relative; margin: 30px 200px 50px;}/*겹치게 만들어야함*/
+#searchForm input#search{
+    width: 600px; height: 50px;
+    border: 1px solid #222; border-radius: 5px;
+    font-size: 10px; padding: 0 20px;
+    float: left; color: #63717f;
+}
+#searchForm > .fa-search{
+    position: absolute; font-size: 30px;
+    right: 5%; top: 10px;
+    z-index: 1;
+    color: #666;
+}
+
+/*----spread-wrap----*/
+.spread-wrap{padding: 10px;}
+/*--menu-category--*/
+.menu-category{margin-top: 20px; margin-bottom: 30px;}
+.menu-category > a {padding: 0 30px;}
+/*--brand-name--*/
+/*---- [ 가 ] , [ 나 ] , [ 다 ] ... 각각 높이----*/
+.brand-name {width: 1040px; height: 600px; position: relative; padding: 0 50px; border-top: 1px solid #e7e7e7; margin-top: 30px;}
+/*[ 나 ]*/
+.brand-name:nth-of-type(2){height: 500px;}
+/*[ 다 ]*/
+.brand-name:nth-of-type(3){height: 1000px;}
+/*[ 라 ]*/
+.brand-name:nth-of-type(4){height: 1300px;}
+/*[ 마 ]*/
+.brand-name:nth-of-type(5){height: 1000px;}
+/*---- [ 가 ] , [ 나 ] , [ 다 ] ... 각각 높이----*/
+.brand-name > strong{position: absolute; left: 0; font-size: 60px; font-weight: 900; color: #222;}/*absolute를 이용해서 padding에 안착*/
+.brand-name > li {float: left; width: 200px; padding:20px;}
+.brand-name > li > img{display: block; float: left;}
+.brand-name > li > div{width: 100px; height: 100px; float: left;}
+.brand-name > li > div > span{display: block; overflow: hidden; text-overflow: ellipsis; white-space: pre; text-align: left; height: 30px; margin-left: 5px; margin-top: 10px;}
+.brand-name > li > div > span:first-child{font-weight: bold;}

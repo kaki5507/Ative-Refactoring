@@ -1,0 +1,60 @@
+/*-----------wrap-----------*/
+#wrap {margin: 0 auto; width: 1040px;}
+#wrap > div {width: 1040px; height: 350px; background-color: white; margin: 20px 0;}
+#wrap > div:nth-child(3) {height: 250px; margin-top: 20px;}
+#wrap > p {width: 1040px; height: 100px; margin: 20px 0;}
+#wrap > div:first-child{height: 200px; border-bottom:1px solid rgba(192, 192, 192, 0.5);}
+/*------title-benefit------*/
+.title-benefit{text-align: center; font-size: 34px;}
+.title-benefit > h2{margin-top: 60px;}
+.title-benefit > p{font-size: 20px; margin-top: 50px;}
+
+/*------benefit-info------*/
+.benefit-info{text-align: center; margin: 0 auto;}
+.benefit-info > dl {display: table; margin-top: 30px; padding-left: 350px;}
+.benefit-info > dl > dt{
+    width: 50px; height: 50px;  font-size: 30px;
+    border-radius: 50%; background-color: #f3f3f3;
+}
+.benefit-info > dl > dd{display: table-cell; text-align: left; line-height: 20px; }
+.membership-info{padding-left: 30px; position: relative; bottom: 10px;}
+.benefit-info > dl > dd > span{display: table-cell;}
+/*--membership-join--*/
+.benefit-info > .membership-join{
+    border: 2px solid black; box-sizing: border-box; padding: 20px; 
+    font-weight: bolder; display: inline-block; margin-top: 20px;
+}
+
+/*------benefit-sns------*/
+.benefit-sns {font-size: 13px; font-weight: bolder;}
+.benefit-sns > h3{font-size: 30px; text-align: center;}
+.benefit-sns > ul{margin: 80px 100px;}
+.benefit-sns > ul > li{
+    float: left; box-sizing: border-box; border: 1px solid #e6e6e6; 
+    margin-left: 20px; padding: 5px; display: block;
+}
+.benefit-sns > ul > li > a{ box-sizing: border-box; }
+.benefit-sns > ul > li > a > span:first-child{
+    padding-right: 5px; box-sizing: border-box; border-right: 1px solid #e6e6e6; 
+    font-size: 15px;
+}
+/*----아이콘----*/
+/*--facebook--*/
+.facebook > .icon{color: blue;}
+/*--kakao--*/
+.kakao > .icon{
+    color:rgb(60,30,30);background-color: rgb(250,255,0); box-sizing: border-box; 
+    padding-left: 5px; 
+}/*일단 이렇게 색칠!*/
+/*--naver--*/
+.naver{ text-align: right;}
+.naver > .icon{
+    font-family: 'Dosis', sans-serif; color: rgb(45,180,0); text-align: center; 
+    box-sizing: border-box; padding-left: 5px;
+}
+/*--구글--*/
+.google > .icon{color:rgb(219,68,55)}
+
+/*------notify------*/
+.notify {text-align: center; color: #666;}
+.notify > em{font-style: normal;}

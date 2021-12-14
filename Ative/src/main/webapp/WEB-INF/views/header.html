@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="김승현,Kim Seung Hyeon">
+    <meta name="description" content="에이티브 헤더(hedaer),Ative header">
+    <meta name="keywords" content="에이티브,ATIVE,Header">
+    <meta name="copyright" content="copyright 2020 html25th">
+    <title>header</title>
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Jua&display=swap" rel="stylesheet">
+        <!--폰트어썸-->
+        <script src="https://kit.fontawesome.com/126e320e56.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/header.js"></script>
+</head>
+<body>
+<!------gnb------>
+<div id="gnb">
+    <a href="../main/index.html"><h1 id="logo"><img src="/images/shop_logo.gif" alt="ative logo"></h1></a><!--절대 경로지정하기-->
+    <!--STORE 메뉴-->
+    <nav class="menu-gnb">
+        <a href="#">STORE</a>
+        <ul class="submenu-gnb">
+            <li><a href="../store/strNew.html">NEW</a></li>
+            <li><a href="../store/strMen.html">MEN</a></li>
+            <li><a href="../store/strSho.html">SHOES</a></li>
+            <li><a href="../store/strBA.html">BAG&ACC</a></li>
+            <li><a href="../store/strWm.html">WOMEN</a></li>
+        </ul>
+    </nav>
+    <!--CAST 메뉴-->
+    <nav class="menu-gnb">
+        <a href="#">CAST</a>
+        <ul class="submenu-gnb">
+            <li><a href="../cast/castBn.html">BRAND</a></li>
+            <li><a href="../cast/castLk.html">LOOK</a></li>
+            <li><a href="../cast/castCm.html">COMMUNITY</a></li>
+            <li><a href="../cast/castRv.html">REVIEW</a></li>
+        </ul>
+    </nav>
+    <!--HELP 메뉴-->
+    <nav class="menu-gnb">
+        <a href="#">HELP</a>
+        <ul class="submenu-gnb">
+            <li><a href="/common/error.html">MY</a></li>
+            <li><a href="/common/error.html">HELP</a></li>
+        </ul>
+    </nav>
+    <!--SALE-->
+    <nav class="menu-gnb">
+        <a href="http://127.0.0.1:5500/sale/sale.html">SALE</a>
+    </nav>
+    <!--검색,장바구니,마이페이지-->
+    <nav class="menu-utill">
+        <a href="/common/error.html"><i class="fas fa-search"></i><!--돋보기--></a>
+        <a href="../basket/bkCart.html"><i class="fas fa-shopping-cart"></i><!--카트--></a>
+        <a href="">
+            <i class="fas fa-user"></i><!--유저-->
+            <!--마이페이지 클릭시-->
+            <div class="submenu-user"><!--상대경로로 했더니 Cannot 뜸 -->
+                <a href="http://127.0.0.1:5500/login/login.html">로그인</a>
+                <a href="http://127.0.0.1:5500/register/regBf.html">회원가입</a>
+            </div>
+        </a>
+        <div class="word_ballon"><i class="fas fa-caret-left"></i><!--화살표 왼쪽-->회원가입15%쿠폰</div><!--박스-->
+    </nav>
+
+    <!------btn_top------>
+    <a class="btn_top" href="#">
+        <img src="../common/images/btn_top.png" alt="top">
+    </a>
+    <!------//btn_top------>
+</div>
+<!------//gnb------>
+</body>
+</html>
